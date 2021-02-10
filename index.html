@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spider-Man: Miles Morales</title>
     <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/svg-inject.min.js"></script>
 </head>
 
 <body>
@@ -15,7 +16,9 @@
     <header>
         <nav class="navbar">
             <div class="nav-menu">
-                <div class="logo"></div>
+                <div class="logo">
+                    <img src="svg/logo-spiderman.svg" onload="SVGInject(this)" alt="logo">
+                </div>
                 <ul class="nav-lista">
                     <li><a href="#" class="nav-link">Home</a></li>
                     <li><a href="#" class="nav-link">Store</a></li>
@@ -23,9 +26,42 @@
                     <li><a href="#" class="nav-link">#BeYourelf</a></li>
                 </ul>
             </div>
-            <div class="nav-social"></div>
+            <div class="nav-social">
+                <img src="svg/icon-facebook.svg" onload="SVGInject(this)" alt="logo">
+                <img src="svg/icon-instagram.svg" onload="SVGInject(this)" alt="logo">
+                <img src="svg/icon-youtube.svg" onload="SVGInject(this)" alt="logo">
+                <img src="svg/icon-twitter.svg" onload="SVGInject(this)" alt="logo">
+
+            </div>
         </nav>
     </header>
+
+    <section class="container">
+        <div class="containter-item-1">
+            <p>
+                <img src="img/spiderman-text.png" onload="SVGInject(this)" alt="logo">
+
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae quos, voluptatum quasi explicabo
+                molestiae illo quam nihil esse aut vero enim doloremque. Molestias minus natus, aspernatur temporibus
+                ipsam voluptatibus culpa!
+            </p>
+
+            <p>
+                <a href="#" class="btn">Pre-order now</a>
+                <a href="#" class="btn-secondary">watch be teaser</a>
+            </p>
+            <p>
+                <img src="svg/ps.svg" onload="SVGInject(this)" alt="logo">
+                <img src="svg/marvel.svg" onload="SVGInject(this)" alt="logo">
+
+            </p>
+        </div>
+        <div class="container-item-2">
+            <img src="img/spider-man.png" onload="SVGInject(this)" alt="logo">
+        </div>
+    </section>
 
 </body>
 
