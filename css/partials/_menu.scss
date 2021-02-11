@@ -27,3 +27,55 @@ header {
     margin-left: 24px;
   }
 }
+
+.nav-link {
+  display: inline-block;
+
+  font-size: 14px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 200;
+
+  padding: 8px 16px;
+
+  color: $gray-3;
+
+  text-transform: uppercase;
+  transition: all 0.7s ease;
+
+  position: relative;
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -50px;
+    left: 50%;
+
+    margin-top: 8px;
+    width: 2px;
+    height: 0px;
+    border-radius: 2px;
+
+    transform: translate3d(-15%, 0, 0);
+    transition: 0.7s ease;
+
+    background: linear-gradient(
+      359.94deg,
+      #e11c21 0.06%,
+      rgba(225, 28, 33, 0) 101.91%
+    );
+  }
+
+  &:hover {
+    color: $white-light;
+
+    &::after {
+      height: 40px;
+    }
+  }
+}
+
+.nav-social {
+  display: flex;
+}

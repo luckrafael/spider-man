@@ -78,4 +78,49 @@ header {
 .nav-list li {
   margin-left: 24px;
 }
+
+.nav-link {
+  display: inline-block;
+  font-size: 14px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 200;
+  padding: 8px 16px;
+  color: #959698;
+  text-transform: uppercase;
+  -webkit-transition: all 0.7s ease;
+  transition: all 0.7s ease;
+  position: relative;
+}
+
+.nav-link::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -50px;
+  left: 50%;
+  margin-top: 8px;
+  width: 2px;
+  height: 0px;
+  border-radius: 2px;
+  -webkit-transform: translate3d(-15%, 0, 0);
+          transform: translate3d(-15%, 0, 0);
+  -webkit-transition: 0.7s ease;
+  transition: 0.7s ease;
+  background: linear-gradient(359.94deg, #e11c21 0.06%, rgba(225, 28, 33, 0) 101.91%);
+}
+
+.nav-link:hover {
+  color: #f4f7fb;
+}
+
+.nav-link:hover::after {
+  height: 40px;
+}
+
+.nav-social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
 /*# sourceMappingURL=style.css.map */
