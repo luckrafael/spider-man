@@ -43,7 +43,6 @@ header {
 
 .navbar {
   max-width: 1440px;
-  border: 1px solid red;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -122,5 +121,23 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.nav-social svg {
+  cursor: pointer;
+  margin-left: 16px;
+  width: 24px;
+}
+
+.nav-social svg path {
+  -webkit-transition: 0.7 ease;
+  transition: 0.7 ease;
+}
+
+.nav-social svg:hover path,
+.nav-social svg:hover circle {
+  fill: #f02a2f;
+  -webkit-transform: translate3d(0, -3px, 0);
+          transform: translate3d(0, -3px, 0);
 }
 /*# sourceMappingURL=style.css.map */
