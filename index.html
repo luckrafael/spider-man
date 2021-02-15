@@ -65,9 +65,22 @@
             </div>
         </div>
         <div class="container-item-2">
-            <img src="img/spider-man.png" class="spiderman" onload="SVGInject(this)" alt="logo">
+            <div class="js-tilt">
+                <img src="img/spider-man.png" class="spiderman" onload="SVGInject(this)" alt="logo">
+            </div>
         </div>
     </section>
+
+    <script src="js/app.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js"></script>
+
+    <script>
+        $('.js-tilt').tilt({
+            perspective: 2000,
+            scale: 1.05,
+        });
+    </script>
 
 </body>
 
